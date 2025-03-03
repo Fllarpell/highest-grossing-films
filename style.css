@@ -9,34 +9,34 @@
     --shadow-light: rgba(0, 0, 0, 0.5);
     --shadow-dark: rgba(0, 0, 0, 0.7);
     --transition-speed: 0.3s;
-  }
+}
   
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   
-  body {
+body {
     font-family: 'Roboto', sans-serif;
     background: var(--bg-color);
     margin: 0;
     padding: 20px;
     color: var(--text-light);
     background-image: radial-gradient(circle at top left, #1c1c1c, var(--bg-color));
-  }
+}
   
-  header {
+header {
     text-align: center;
     margin-bottom: 40px;
     animation: fadeIn 2s ease-out;
-  }
+}
   
-  h1 {
+h1 {
     color: var(--primary-color);
     font-size: 3em;
     margin: 0;
     letter-spacing: 1px;
     text-shadow: 0 2px 4px var(--shadow-dark);
-  }
+}
   
-  #search {
+#search {
     padding: 15px;
     width: 320px;
     margin-top: 20px;
@@ -46,15 +46,15 @@
     background: var(--card-bg);
     color: var(--text-light);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
+}
   
-  #search:focus {
+#search:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 10px var(--primary-color);
     outline: none;
-  }
+}
 
-  #sort {
+#sort {
     padding: 15px;
     width: 320px;
     margin: 20px auto;
@@ -65,21 +65,21 @@
     background: var(--card-bg);
     color: var(--text-light);
     transition: border-color 0.3s ease;
-  }
+}
   
-  #sort:focus {
+#sort:focus {
     border-color: var(--primary-color);
     outline: none;
-  }
+}
   
-  #films-container {
+#films-container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-  }
+}
   
-  .film-card {
+.film-card {
     background: var(--card-bg);
     padding: 20px;
     width: 320px;
@@ -92,40 +92,40 @@
     opacity: 0;
     transform: translateY(20px);
     cursor: pointer;
-  }
+}
   
-  .film-card.visible {
+.film-card.visible {
     animation: fadeInUp 0.8s forwards;
 }
 
-  .film-card:hover {
+.film-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 16px 32px var(--shadow-dark);
-  }
+}
   
-  .film-card h3 {
+.film-card h3 {
     margin-top: 0;
     font-size: 1.8em;
     color: var(--primary-color);
     text-shadow: 0 1px 2px var(--shadow-light);
-  }
+}
   
-  .film-card p {
+.film-card p {
     margin: 10px 0;
     color: var(--text-muted);
     line-height: 1.4;
-  }
+}
   
-  .film-card img {
+.film-card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-top: 15px;
     opacity: 0;
     animation: fadeInImage 1s forwards;
-  }
+}
   
-  button {
+button {
     background: var(--primary-color);
     color: var(--bg-color);
     padding: 12px 25px;
@@ -136,25 +136,25 @@
     transition: background 0.4s, transform 0.2s, box-shadow 0.2s;
     margin-top: 15px;
     box-shadow: 0 4px 8px var(--shadow-light);
-  }
+}
   
-  button:hover {
+button:hover {
     background: var(--secondary-color);
     transform: translateY(-3px);
     box-shadow: 0 8px 16px var(--shadow-dark);
-  }
+}
   
-  @keyframes fadeInImage {
+@keyframes fadeInImage {
     from { opacity: 0; }
     to { opacity: 1; }
-  }
+}
   
-  @keyframes fadeIn {
+@keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
-  }
+}
   
-  @keyframes fadeInUp {
+@keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-  }
+}
